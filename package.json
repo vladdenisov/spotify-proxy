@@ -1,5 +1,5 @@
 {
-  "name": "spotify-proxy",
+  "name": "@vladdenisov/spotify-proxy",
   "version": "0.0.1",
   "description": "Spotify Proxy. Whitelisted only Spotify domains.",
   "main": "bin/index.js",
@@ -26,6 +26,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vladdenisov/spotify-proxy/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "eslintConfig": {
     "extends": "@logux/eslint-config",
