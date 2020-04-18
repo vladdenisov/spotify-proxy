@@ -8,16 +8,19 @@ const whitelist = require('../lib/whitelist')
 
 const server = http.createServer((req, res) => {}).listen(process.env.PORT || 8080)
 
+const verbose = process.argv.includes('-v')
+
 server.addListener('connect', (req, socket, bodyhead) => {
   const hostPort = req.url.split(':')
   const host = hostPort[0]
   const port = parseInt(hostPort[1])
+  
   if (!micromatch.isMatch(host, whitelist)) {
-    console.log('!!! Blocking HTTPS request for:', host, port)
+    if (verbose) console.log('!!! Blocking HTTPS request for:', host, port)
     return
   }
 
-  console.log('Proxying HTTPS request for:', host, port)
+  if (verbose) console.log('Proxying HTTPS request for:', host, port)
 
   const proxySocket = new net.Socket()
   proxySocket.connect(port, host, () => {
