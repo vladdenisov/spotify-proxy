@@ -1,6 +1,6 @@
 {
   "name": "spotify-proxy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Spotify Proxy. Whitelisted only Spotify domains.",
   "main": "bin/index.js",
   "bin": {
