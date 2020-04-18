@@ -23,19 +23,28 @@ Setup Proxy in Spotify App:
   
 ### **Optional:**   
   If you want, you can change proxy port by setting your enviroment variables: 
+
   #### Windows
   ```cmd
   set PORT=<port you want to use>
   ```
+
   #### Linux
   ```bash
   export PORT=<port you want to use>
   ```
-  Make sure to __check your Spotify app proxy settings__ after this.
-## Usage
 
+  Make sure to __check your Spotify app proxy settings__ after this.
+
+## Usage
+__Normal mode (recommended):__
 ```bash
 spotify-proxy
+```
+
+Verbose mode (for debug):
+```bash
+spotify-proxy -v
 ```
 
 ## Disclaimer
