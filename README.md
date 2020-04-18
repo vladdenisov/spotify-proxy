@@ -1,4 +1,4 @@
-# Spotify Proxy
+# Spotify Proxy ![npm bundle size](https://img.shields.io/bundlephobia/minzip/spotify-proxy) ![npm](https://img.shields.io/npm/dw/spotify-proxy) ![npm](https://img.shields.io/npm/v/spotify-proxy)
 
 Simple NodeJS Proxy with whitelisted only Spotify addresses.   
 Prevents from optional data usage. Increases Spotify app speed.
